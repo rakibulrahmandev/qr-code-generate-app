@@ -13,3 +13,13 @@ const getInputValue = (inp) => {
     return inputValue;
 };
 
+const inputValidation = (val) => {
+    let inputValueFromGetInputValue = getInputValue(val);
+    if (!inputValueFromGetInputValue || inputValueFromGetInputValue === '') {
+        alert('Input field cannot be empty! Please put valid text or url.');
+        return;
+    };
+
+    return inputValueFromGetInputValue;
+};
+
