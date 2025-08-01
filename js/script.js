@@ -7,3 +7,9 @@ const loading = document.getElementById('loading');
 const qrCode = document.getElementById('qr-code');
 const qrGenerateBtn = document.getElementById('generate-btn');
 
+// functions -------------------------------------->
+const getInputValue = (inp) => {
+    let inputValue = String(inp.value).trim().toLowerCase();
+    return inputValue;
+};
+
