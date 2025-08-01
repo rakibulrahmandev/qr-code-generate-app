@@ -37,3 +37,12 @@ const loadingScene = (url) => {
         qrGenerateBtn.disabled = false;
     }, 3000);
 };
+
+const displayQRCode = (inp) => {
+    let inputValue = inputValidation(inp);
+    if (inputValue) {
+        loading.classList.remove('hidden');
+        qrGenerateBtn.disabled = true;
+        loadingScene(input);
+    };
+};
