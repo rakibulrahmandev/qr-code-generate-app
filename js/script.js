@@ -28,3 +28,12 @@ const generateQRCode = (val) => {
     return generatedQRCode;
 };
 
+const loadingScene = (url) => {
+    setTimeout(() => {
+        const generatedQR = generateQRCode(url);
+        qrCodeBox.classList.remove('hidden');
+        qrCode.src = generatedQR;
+        loading.classList.add('hidden');
+        qrGenerateBtn.disabled = false;
+    }, 3000);
+};
