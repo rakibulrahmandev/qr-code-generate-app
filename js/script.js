@@ -46,3 +46,8 @@ const displayQRCode = (inp) => {
         loadingScene(input);
     };
 };
+
+// event listener --------------------------------->
+qrGenerateBtn.addEventListener('click', () => {
+    displayQRCode(input);
+});
